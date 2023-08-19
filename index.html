@@ -23,12 +23,13 @@
   <!-- Body -->
   <body>
     <!-- Header -->
-    <!-- <header class="header">
+    <header class="header">
       <div class="container">
         <nav class="nav">
           <a href="./index.html" class="logo"
             >Web<span class="studio">Studio</span></a
           >
+
           <ul class="list">
             <li>
               <a href="./index.html" class="special"
@@ -53,21 +54,86 @@
             </li>
           </ul>
         </address>
+        <button type="button" class="button-header-open" data-menu-open>
+          <svg width="32" height="22" class="bttn-open">
+            <use href="./images/icons.svg#icon-image-29-converted"></use>
+          </svg>
+        </button>
       </div>
-    </header> -->
+      <div class="mob-menu is-hidden" data-menu>
+        <button type="button" class="button-header-close" data-menu-close>
+          <svg width="8" height="8" class="icon-cross">
+            <use href="./images/icons.svg#icon-image-19"></use>
+          </svg>
+        </button>
+        <ul class="mob-list">
+          <li class="mob-item">
+            <a href="./index.html" class="mob-special"
+              ><span class="mob-studio-name">Studio</span></a
+            >
+          </li>
+          <li class="mob-item">
+            <a href="./portfolio.html" class="mob-link">Portfolio</a>
+          </li>
+          <li class="mob-item"><a href="" class="mob-link">Contacts</a></li>
+        </ul>
+        <ul class="mob-list">
+          <li class="mob-item-contact">
+            <a href="tel:+110001111111" class="mob-link-number"
+              >+11 (000) 111-11-11</a
+            >
+          </li>
+          <li class="mob-item-adress">
+            <a href="mailto:info@devstudio.com" class="mob-link-adress"
+              >info@devstudio.com</a
+            >
+          </li>
+        </ul>
+        <ul class="mob-team-icons-list">
+          <li class="mob-team-icons-li">
+            <a href="" class="mob-team-icons-link">
+              <svg class="mob-team-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-image-15"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mob-team-icons-li">
+            <a href="" class="mob-team-icons-link">
+              <svg class="mob-team-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-image-16"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mob-team-icons-li">
+            <a href="" class="mob-team-icons-link">
+              <svg class="mob-team-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-image-17"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mob-team-icons-li">
+            <a href="" class="mob-team-icons-link">
+              <svg class="mob-team-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-image-18"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </header>
     <!-- Main part -->
     <main>
       <!-- Section 1 - The Head -->
-      <!-- <section class="main-section">
+      <section class="main-section">
         <div class="container">
           <h1 class="page-title">Effective Solutions for Your Business</h1>
           <button type="button" class="button" data-modal-open>
             Order Service
           </button>
         </div>
-      </section> -->
+      </section>
       <!-- Section 2 - Features of WebStudio -->
-      <!-- <section class="features">
+      <section class="features">
         <div class="container">
           <h2 class="visually-hidden">Section 2</h2>
           <ul class="list">
@@ -121,9 +187,9 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
       <!-- Section 3 - Purpose of WebStudio -->
-      <!-- <section class="purpose">
+      <section class="purpose">
         <div class="container">
           <h2 class="heading">What are we doing</h2>
           <ul class="list">
@@ -153,9 +219,9 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
       <!-- Section 4 - Our Team -->
-      <!-- <section class="team">
+      <section class="team">
         <div class="container">
           <h2 class="heading">Our Team</h2>
           <ul class="list">
@@ -329,8 +395,8 @@
             </li>
           </ul>
         </div>
-      </section> -->
-      <!-- <section class="customers">
+      </section>
+      <section class="customers">
         <div class="container">
           <h2 class="heading-sec5">Customers</h2>
           <ul class="customers-list">
@@ -372,15 +438,17 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
     </main>
     <!-- Footer -->
-    <!-- <footer class="footer">
+    <footer class="footer">
       <div class="container">
         <div class="footer-paragraph">
-          <a href="./index.html" class="link"
-            >Web<span class="studia">Studio</span></a
-          >
+          <div class="webstud">
+            <a href="./index.html" class="link"
+              >Web<span class="studia">Studio</span></a
+            >
+          </div>
           <p class="logo">
             Increase the flow of customers and sales for your business with
             digital marketing & growth solutions.
@@ -438,7 +506,7 @@
           </form>
         </div>
       </div>
-    </footer> -->
+    </footer>
     <div data-modal class="backdrop is-hidden">
       <div class="modal-window">
         <button type="button" data-modal-close class="button-close-window">
@@ -515,5 +583,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

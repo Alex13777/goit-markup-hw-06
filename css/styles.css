@@ -27,6 +27,7 @@ a {
 }
 .header .container {
   display: flex;
+  align-items: center;
 }
 .nav {
   display: flex;
@@ -146,6 +147,7 @@ a {
   color: #404bbf;
 }
 .adress {
+  margin-left: auto;
   font-style: normal;
 }
 .adress .list {
@@ -167,16 +169,21 @@ a {
 }
 .button-header-open {
   margin-left: auto;
+  position: absolute;
+  top: 20px;
+  right: 20px;
   border: none;
   background-color: transparent;
 }
 .button-header-close {
   display: block;
-  margin-left: auto;
-  margin-bottom: 32px;
+
   background-color: transparent;
   border-radius: 50%;
   border: 1px solid rgba(46, 47, 66, 0.1);
+  position: absolute;
+  top: 20px;
+  right: 20px;
 }
 .bttn-open {
   fill: #2e2f42;
@@ -190,11 +197,14 @@ a {
   z-index: 20;
   padding-left: 40px;
   padding-bottom: 40px;
-  padding-top: 24px;
+  padding-top: 80px;
   padding-right: 24px;
   display: flex;
   flex-direction: column;
   overflow: auto;
+}
+.mob-list-container {
+  margin-bottom: auto;
 }
 .mob-link {
   font-family: Roboto;
@@ -261,7 +271,6 @@ a {
   background-color: #404bbf;
 }
 .mob-list {
-  margin-top: auto;
 }
 .mob-team-icon {
   fill: #f4f4fd;
@@ -318,7 +327,7 @@ a {
 }
 .container {
   margin: 0 auto;
-  padding: 0 15px;
+
   max-width: 1158px;
   width: 100%;
 }
@@ -346,7 +355,7 @@ a {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  font-weight: 500;
+  font-weight: 400;
 }
 .heading {
   color: var(--primarycolor);
@@ -391,7 +400,7 @@ a {
   display: flex;
   justify-content: center;
   gap: 24px;
-  padding-top: 8px;
+  margin-top: 8px;
 }
 .team-icons-li {
   width: 40px;
@@ -963,8 +972,6 @@ img {
   background-color: #404bbf;
 }
 .footer-media {
-  margin-top: 72px;
-  margin-bottom: 72px;
 }
 .list-heading {
   text-align: center;
@@ -991,6 +998,8 @@ img {
   }
   .bttn-footer {
     margin-top: 20px;
+  }
+  .logo {
   }
 }
 
@@ -1056,8 +1065,6 @@ img {
   .adress .list {
     display: flex;
     flex-direction: column;
-    margin-top: 16px;
-    margin-left: 100px;
   }
   .adress .list .link {
     font-size: 12px;
@@ -1072,7 +1079,6 @@ img {
   }
   .footer {
     max-width: 768px;
-    padding: 96px 108px;
   }
   .footer .container {
     display: flex;
@@ -1080,9 +1086,9 @@ img {
     flex-direction: row;
     gap: 24px;
     align-items: baseline;
+    width: 590px;
   }
   .footer-paragraph {
-    margin-top: 96px;
     width: 264px;
   }
   .footer-media {
@@ -1189,9 +1195,6 @@ img {
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-top: 24px;
-    margin-bottom: 24px;
-    margin-right: 156px;
   }
   .adress .list .link {
     font-weight: 400;
